@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primero se pone normalize-->>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <!-- Nuestro propio css-->>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Developer page</title>
 </head>
 <body><header>
-    <h1>Dylan Vazquez Developer</h1>
+    <h1 class="my-title">Dylan Vazquez <span>Developer</span></h1>
 </header>
 <nav>
     <a href="#">Inicio</a>
@@ -132,6 +140,30 @@ unicode: "f78e"
       </main>
       <section>
         <h2>Contacto</h2>
+       <form>
+          <fieldset>
+            <legend>Llena tus datos de contacto, para poder contactarte</legend>
+            <div>
+              <label>Nombre completo</label>
+              <input type="text" placeholder="Nombre completo"/>
+            </div>
+            <div>
+              <label>Telefono</label>
+              <input type="tel" placeholder="Tu teléfono"/>
+            </div>
+              <div>
+              <label>Email</label>
+              <input type="email" placeholder="Tu correo electrónico"/>
+            </div>
+              <div>
+              <label>Mensaje</label>
+              <textarea name="" id=""></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Enviar">
+            </div>
+          </fieldset>
+       </form>
       </section>
       <footer>
         <p>Todos los derechos reservados . Dylan Vazquez Soriano</p>
